@@ -1,7 +1,6 @@
 import { createSignal } from 'solid-js'
 import { render } from 'solid-js/web'
 import './style.css'
-import typescriptLogo from './typescript.svg'
 
 const App = () => {
   const [counter, setCounter] = createSignal(0)
@@ -11,10 +10,10 @@ const App = () => {
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
       </a>
-      <a href="https://www.typescriptlang.org/" target="_blank">
-        <img src={`${typescriptLogo}`} class="logo vanilla" alt="TypeScript logo" />
+      <a href="https://www.solidjs.com/" target="_blank">
+        <img src="/solid.svg" class="logo" alt="Solid logo" />
       </a>
-      <h1>Vite + TypeScript</h1>
+      <h1>Vite + Solid</h1>
       <div class="card">
         <button onClick={(e) => {
           e.preventDefault();
@@ -22,7 +21,7 @@ const App = () => {
         }}>count is {counter()}</button>
       </div>
       <p class="read-the-docs">
-        Click on the Vite and TypeScript logos to learn more
+        Click on the Vite and Solid logos to learn more
       </p>
     </div>
   )
